@@ -5,12 +5,7 @@
 
 import random
 
-a = []
-i = 0
-
-while i < 10:
-    a.append(round(random.uniform(-50, 50), 5))
-    i += 1
+a = [round(random.uniform(-50, 50), 5) for _ in range(10)]
 
 print(f"Первичный массив:  {a}")
 

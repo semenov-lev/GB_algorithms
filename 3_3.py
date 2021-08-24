@@ -2,12 +2,7 @@
 
 import random
 
-a = []
-i = 0
-
-while i < 20:
-    a.append(random.randint(0, 10))
-    i += 1
+a = [random.randint(0, 10) for _ in range(10)]
 
 print(f"Первичный массив:  {a}")
 
